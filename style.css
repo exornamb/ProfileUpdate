@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --sm-fs: 0.8rem;
+    --bg-color: #355453;
+    --color: white;
+    --fade-color: grey;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("./nir-himi-RnsEVxqJlE8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: flex;
+    /* flex-flow: row wrap; */
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 650px;
+}
+
+.form{
+    width: 60%;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    margin-right: 10px;
+    
+}
+
+label{
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type= "text"],input[type= "email"], .password{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.password{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+input[type= "password"]{
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 95%;
+}
+
+input[type= "submit"]{
+    background: black;
+    max-width: 162px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+input[type= "text"]:focus,input[type= "email"]:focus, .password:hover{
+    border-bottom: 2px solid black;
+}
+
+input[type= "submit"]:hover{
+    cursor: pointer;
+    background: linear-gradient(45deg, rgba(90, 59, 9, 0.4), rgba(0, 0, 0, 0.8));
+}
+
+
+.fa-solid{
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+form p{
+    font-size: 0.2rem;
+    color: red;
+    visibility: hidden;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+ .list .circle{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.name{
+    margin: 10px;
+}
+
+.list1{
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+    height: fit-content;
+    background: black;
+    color: rgb(187, 188, 189);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: var(--sm-fs);
+}
+
+del{
+color: var(--fade-color);
+}
+
+/* @media screen and (max-width=400px) {
+    
+    .form{
+        width: 100%;
+    }
+} */
